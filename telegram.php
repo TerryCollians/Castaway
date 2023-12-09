@@ -1,8 +1,4 @@
 <?php
-
-/* https://api.telegram.org/bot6412135542:AAHvIIIO4rwfOG8B0QSFIlg9Yr9SmJGe4f8/getUpdates,
-где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
-
 $name = $_POST['user_name'];
 $email = $_POST['user_email'];
 $token = "bot6412135542:AAHvIIIO4rwfOG8B0QSFIlg9Yr9SmJGe4f8";
