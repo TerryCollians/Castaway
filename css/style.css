@@ -451,6 +451,10 @@ html {
 
   }
   
+  .message-list{
+    display: flex;
+    gap: 15px;
+  }
 
   .messangers{
     display: flex;
