@@ -2,22 +2,26 @@
 
 $name = $_POST['name'];
 $email = $_POST['email'];
-$token = "6940332375:AAHT74nUykBFudqbdtfPpE5JxTY6RnvfEI8";
-$chat_id = "-4001541380";
-$arr = array(
-  'Name: ' => $name,
-  'Email: ' => $email
-);
 
-foreach($arr as $key => $value) {
-  $txt .= "<b>".$key."</b> ".$value."%0A";
-};
+$name htmlspecialchars($name);
+$email htmlspecialchars($email);
 
-$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+$name urldecode($name);
+$email urldecode($email);
 
-if ($sendToTelegram) {
-  echo "Message sended";
-} else {
-  echo "Error";
+$name trim($name);
+$email trim($email);
+
+if  (mail("terrycollians@terry.zzz.com.ua",
+          "New message on site Castaway: ",
+          "Name: ".$name."\n".
+          "Email: ".$email."\n".)
+) {
+  echo ('Message sended!')
 }
+
+else{
+  echo('Error... Check data')
+}
+
 ?>
