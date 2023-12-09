@@ -360,13 +360,13 @@ html {
     
     .gallery__left {
       left: 40px;
-      background-image: url("../img/svg/211689_left_arrow_icon.svg");
+      background-image: url("../img/svg/left-chevron-svgrepo-com.svg");
       fill: var(--main-text-color);
     }
     
     .gallery__right {
       right: 40px;
-      background-image: url("../img/svg/211607_right_arrow_icon.svg");
+      background-image: url("../img/svg/right-chevron-svgrepo-com.svg");
       fill: var(--main-text-color);
     }
     
@@ -378,7 +378,7 @@ html {
       font-size: 17px;
       line-height: 27px;
       text-align: center;
-      color: var(--text-color);
+      color: var(--current);
     }
     /*------GALERY end------*/
 
