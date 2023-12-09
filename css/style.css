@@ -37,6 +37,10 @@ html {
     color: var(--main-text-color);
     background-color: var(--body-bg);
   }
+
+  .logo{
+    width: auto;
+  }
   
   .container {
     max-width: 1340px;
