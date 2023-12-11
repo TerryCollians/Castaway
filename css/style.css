@@ -665,6 +665,55 @@ html {
   /*-----MODAL end-----*/
   
 
+/*-----THANK-PAGE start-----*/
+  .body-thank{
+    background: var(--body-bg);
+  }
+
+  .infosent__title{
+    font-size: 30px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 70px;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 125%;
+    letter-spacing: 3.2px;
+    text-align: center;
+  }
+
+  .infosent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid var(--current);
+    position: relative;
+    animation: glow 2s ease-in-out infinite;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    transition: all 0.3s ease;
+  }
+
+ .containerr{
+  max-width: 1340px;
+  padding: 0 50px;
+  margin: 0 auto;
+ }
+
+ @keyframes glow {
+  0% {
+    box-shadow: 0 0 10px var(--current), 0 0 20px var(--current), 0 0 35px var(--current), 0 0 20px var(--current);
+  }
+  100% {
+    box-shadow: 0 0 20px var(--current), 0 0 30px var(--current), 0 0 40px var(--current), 0 0 50px var(--current);
+  }
+}
+
+ /*-----THANK-PAGE end-----*/
   
   
 

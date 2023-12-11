@@ -36,8 +36,8 @@ try {
    
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$name. '<br>Почта этого пользователя: ' .$email;
+    $mail->Subject = 'Castaway Letter';
+    $mail->Body    = '' .$name . ' sent a subscription request ' . '<br>His mail: ' .$email;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
