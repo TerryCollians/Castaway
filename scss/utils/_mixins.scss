@@ -1,0 +1,13 @@
+@mixin font-set($font-size,$font-weight,$font-style,$line-height){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    line-height: $line-height;
+}
+
+@mixin disp ($display,$align-items,$justify-content){
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+}

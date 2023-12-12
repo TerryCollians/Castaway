@@ -1,0 +1,120 @@
+@import 'utils/vars.scss';
+
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.20);
+    display: flex;
+    cursor: pointer;
+    z-index: 9999;
+
+    .is-hidden{
+        display: none;
+    }
+
+    .modal__window{
+        position: relative;
+        width: 900px;
+        height: 540px;
+        border-radius: 32px;
+        background: $card-bg;
+        margin: auto;
+        color: $modal-bg;
+        padding-left: 40px;
+        cursor: default;
+        display: flex;
+        align-items: center;  
+        padding-bottom: 166px;
+        padding-top: 80px;  
+                 
+        .modal__button{
+            width: 18;
+            height: 18;
+            color: $main-text-color;
+            @include disp(flex,center,center);
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            
+        }  
+          
+        .modal__title{
+            @include disp(flex,flex-start,flex-start);
+            height: 330px;
+            width: 444px;
+            flex-direction: column;
+        }
+
+        .modal__head{
+            color: $main-text-color;
+            @include font-set (72px,400,normal,110%); 
+            letter-spacing: 2.88px;
+            margin:0;
+            width: 375px;
+            height: 251px;
+        }
+
+        .modal__text{
+            color:$current;
+            @include font-set(18px,400,normal,150%);
+            width: 96px;
+        }
+
+        .form__body{
+            width: 403px;
+            height: 279px; 
+            @include disp(flex,flex-start,center);
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 53px;
+        }
+
+        .form__input{
+            height:auto;
+            width: 403px;
+            border-radius: 6px;
+            border: 1px solid $body-bg;
+            background: $body-bg;
+            color: $text-color;
+            @include font-set(24px,400,normal,120%);
+            padding-top: 26px;
+            padding-bottom: 27px;
+            padding-left: 14px;
+
+            &._error{
+                box-shadow:  0 0 15px red;
+            }
+        }
+
+        .form__button{
+            width: auto;
+            height: auto;
+            text-align: center;
+            background-color: $body-bg;
+            border-radius: 6px;
+            color: $text-color;
+            @include font-set(15px,700,normal,192%);
+            padding:11px 16px;
+
+            &:focus,
+            &:hover{
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+                background-color: var(--current);
+            }
+        }
+
+        .modal__button{
+            border-radius: 100%;
+            background-color: $current;
+            width: 50px;
+            height:50px;
+
+            &:hover,
+            &:focus{
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}

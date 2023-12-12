@@ -19,6 +19,7 @@ html {
     width: auto;
     max-width: 24px;
   }
+  
   img {
     max-width: 100%;
   }
@@ -559,7 +560,6 @@ html {
     position: absolute;
     top: 8px;
     right: 8px;
-    position: absolute;
   }
   .is-hidden {
     display: none;
