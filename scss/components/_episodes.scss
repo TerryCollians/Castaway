@@ -1,0 +1,113 @@
+@import"../utils/mixins";
+@import"../utils/vars";
+
+.episodes{
+    padding-top: 104px;
+    padding-bottom: 96px;
+
+    .title{
+        margin: 0;
+        margin-bottom: 40px;
+        @include font-set(64px,400,normal,79px);
+        letter-spacing: 2.88px;
+    }
+
+    .episodes__top{
+        @include disp(flex,center,space-between);
+        margin-bottom: 70px;
+
+        & .title{
+            margin: 0;
+        }
+    }
+
+    .episodes__filter{
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+
+    .episodes__filter-btn{
+        border-radius: 6px;
+        height: auto;
+        min-height: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &:hover,
+        &:focus{
+            transition: all 0.3s ease;
+            background-color: $current;
+        }
+    }
+
+
+
+    .episodes-card{
+        display: flex;
+        border-radius: 32px;
+        padding: 40px;
+        background-color: $card-bg;
+
+        &__category{
+            border-radius: 6px;
+            background: #191919;
+            padding: 0px 16.50px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+    
+            &:hover,
+            &:focus{
+                transition: all 0.3s ease;
+                color: $current;
+            }
+        }
+
+        &__image{
+            width: 389px;
+            margin-right: 50px;
+        }
+
+        &__number{
+            margin-bottom: 18px;
+            font-size: 17px;
+            line-height: 27px;
+            color: $current;
+
+        }
+
+        &__title{
+            margin: 0;
+            margin-bottom: 28px;
+            @include font-set(64px,400,normal,70px);
+            letter-spacing: 2.56px;
+        }
+
+        &__descr{
+            margin: 0;
+            margin-bottom: 18px;
+            @include font-set(22px,400,normal,33px);
+            color: $text-color;
+        }
+
+
+    }
+
+    .episodes__btn{
+        border-radius: 6px;
+        background-color: $current;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: color 0.3s ease, background-color 0.3s ease;
+
+        &:hover,
+        &:focus{
+            transform: scale(1.1);
+            background-color: #454F51;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+    }
+
+    .episodes__item:not(:last-child) {
+        margin-bottom: 60px;
+      }
+}
