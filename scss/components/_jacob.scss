@@ -1,0 +1,42 @@
+@import"../utils/mixins";
+@import"../utils/vars";
+
+.jacob{
+    padding-top: 100px;
+    padding-bottom: 163px;
+
+    & .container{
+        display: flex;
+        flex-direction: row-reverse;
+
+        .jacob__meet{
+            color:$current;
+            font-family: 'DM Sans' , sans-serif;
+            @include font-set(18px,400,normal,150%);
+        }
+
+        .jacob-card__title{
+            color: $main-text-color;
+            font-family: 'DM Sans',sans-serif;
+            @include font-set(65px,400,normal,122%);
+            letter-spacing: 2.88px;
+            margin: 0;
+            width: auto;
+            min-width: 512px;
+            height: 80px;
+        }
+
+        .jcbt{
+            color: $text-color;
+            font-family: 'DM Sans' , sans-serif;
+            @include font-set(22px,400,normal,150%);
+        }
+
+        .jacob-card__content{
+            @include disp(flex,flex-start,center);
+            flex-direction: column;
+            padding-right: 100px;
+            padding-top: 164px;
+        }
+    }
+}

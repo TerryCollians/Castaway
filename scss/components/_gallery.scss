@@ -1,0 +1,48 @@
+@import"../utils/mixins";
+@import"../utils/vars";
+
+
+.gallery__content{
+    padding-bottom: 30px;
+
+    .gallery__btn {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        border: none;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        transition: color 0.3s ease;
+    }
+
+    .gallery__left {
+        left: 40px;
+        background-image: url("../img/svg/left-chevron-svgrepo-com.svg");
+        fill: $main-text-color;
+    }
+
+    .gallery__right {
+        right: 40px;
+        background-image: url("../img/svg/right-chevron-svgrepo-com.svg");
+        fill: $main-text-color;
+    }
+
+    .gallery img {
+        border-radius: 12px;
+      }
+      
+    .gallery__pagination {
+        font-size: 17px;
+        line-height: 27px;
+        text-align: center;
+        color: $current;
+    }  
+}
+

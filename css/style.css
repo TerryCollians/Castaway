@@ -400,7 +400,7 @@ html {
   }
 
   .jacob-card__title{
-        color: var(--main-text-color);
+    color: var(--main-text-color);
     font-family: 'DM Sans',sans-serif;
     font-size: 65px;
     line-height: 122%;
