@@ -11,3 +11,14 @@ new Swiper('.gallery__content', {
     },
   });
   
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav');
+const close = document.querySelector('.close');
+
+burger.addEventListener('click', function(){
+   nav.classList.add('nav--active');
+});
+
+ close.addEventListener('click', function(){
+   nav.classList.remove('nav--active');
+});
