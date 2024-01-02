@@ -1,4 +1,4 @@
-new Swiper('.gallery__content', {
+new Swiper('.gallery__content', {     // Галерея 
     slidesPerView: 1,
     loop: true,
     pagination: {
@@ -11,7 +11,7 @@ new Swiper('.gallery__content', {
     },
   });
   
-const burger = document.querySelector('.burger');
+const burger = document.querySelector('.burger');  // Бургер меню
 const nav = document.querySelector('.nav');
 const close = document.querySelector('.close');
 
