@@ -1,0 +1,122 @@
+@import"../utils/mixins";
+@import"../utils/vars";
+
+
+.footer{
+    padding: 100px 0;
+
+    & .container{
+        display: flex;
+        
+        .message{
+            fill: $main-text-color;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+
+            &:hover{
+                transition: all 0.3s ease;
+                transform: scale(1.2);
+                fill: $current;
+            }
+          }
+
+        .messangers{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            .message-list{
+                display: flex;
+                gap: 15px;
+            }
+            
+            
+            .message__item{
+                display: flex;
+                align-items: center;
+            }            
+        }
+
+        .logosocial{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap:20px;
+        }
+
+        .fnav__link{
+            font-size: 18px;
+            line-height: 27px;
+            transition: color 0.3s ease;
+
+            &:hover:hover,
+            &:focus:focus{
+                color: $current;
+            }
+        }
+
+
+
+        .footernav__link:hover,
+        .footernav__link:focus{
+            color: $current;
+        }
+
+        .footernav__list{
+            display: inline-flex;
+            flex-direction: column;
+            gap:10px;
+            margin-left: 246px;
+        }
+
+        .footerlist-reset {
+            margin-left: 76px;
+        }
+        
+
+        
+        .social{
+            display: flex;
+            align-items: center;
+        }
+
+        .social__item:not(:last-child) {
+            margin-right: 17px;
+          }
+          
+        .social__link {
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &:hover{
+                transform: scale(1.5);
+                transition: all 0.3s ease;
+            }
+        }
+
+        .social__link--1 {
+            background-image: url("../img/svg/social-1.svg");
+          }
+          
+          .social__link--2 {
+            background-image: url("../img/svg/social-2.svg");
+          }
+          
+          .social__link--3 {
+            background-image: url("../img/svg/social-3.svg");
+          }
+          
+          .social__link--4 {
+            background-image: url("../img/svg/social-4.svg");
+          }
+        
+          .social__link--5 {
+            background-image: url("../img/svg/social-5.svg");
+          }
+    }
+}

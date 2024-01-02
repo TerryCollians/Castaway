@@ -1,0 +1,49 @@
+@import"../utils/mixins";
+@import"../utils/vars";
+
+
+
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 10px $current, 0 0 20px $current, 0 0 35px $current, 0 0 20px $current;
+    }
+    100% {
+      box-shadow: 0 0 20px $current, 0 0 30px $current, 0 0 40px $current, 0 0 50px $current;
+    }
+  }
+
+.body-thank{
+    background: $body-bg;
+
+    .containerr{
+        max-width: 1340px;
+        padding: 0 50px;
+        margin: 0 auto;
+       
+
+        .infosent{
+            @include disp(flex,center,center);
+            flex-direction: column;
+            border: 10px solid $current;
+            position: relative;
+            animation: glow 2s ease-in-out infinite;
+            border-radius: 30px;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            margin-top: 100px;
+            transition: all 0.3s ease;
+
+
+            &__title{
+                @include font-set(30px,400,normal,125%);
+                color: $main-text-color;
+                margin: 0;
+                margin-bottom: 70px;
+                letter-spacing: 3.2px;
+                text-align: center;
+            }
+        }
+
+    }
+}
