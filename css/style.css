@@ -661,7 +661,7 @@ line-height: 150%;
 
 /*-----THANK-PAGE start-----*/
 .body-thank{
-  background: var(--body-bg);
+  background-color: #191919;
 }
 
 .infosent__title{
